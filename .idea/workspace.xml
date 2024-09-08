@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d43401-2faa-4d53-ba29-5ce0e4bf5246" name="更改" comment="after_delete_Code_and_pycharm_git">
+    <list default="true" id="03d43401-2faa-4d53-ba29-5ce0e4bf5246" name="更改" comment="test1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/grammer_learning/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/grammer_learning/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/grammer_learning/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/grammer_learning/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/grammer_learning/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/grammer_learning/grammer_learning.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/grammer_learning/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +100,12 @@
       <workItem from="1725757287843" duration="555000" />
       <workItem from="1725757853330" duration="50000" />
       <workItem from="1725757907961" duration="25000" />
+      <workItem from="1725758818356" duration="61000" />
+      <workItem from="1725758885952" duration="4000" />
+      <workItem from="1725758898010" duration="66000" />
+      <workItem from="1725758971664" duration="31000" />
+      <workItem from="1725759022020" duration="59000" />
+      <workItem from="1725759097499" duration="113000" />
     </task>
     <task id="LOCAL-00001" summary="last">
       <option name="closed" value="true" />
@@ -118,7 +131,47 @@
       <option name="project" value="LOCAL" />
       <updated>1725756846187</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test">
+      <option name="closed" value="true" />
+      <created>1725758844058</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725758844058</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test">
+      <option name="closed" value="true" />
+      <created>1725758861827</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725758861827</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test">
+      <option name="closed" value="true" />
+      <created>1725758865437</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725758865437</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test">
+      <option name="closed" value="true" />
+      <created>1725758868134</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725758868134</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test1">
+      <option name="closed" value="true" />
+      <created>1725758877461</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725758877461</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +204,9 @@
     <MESSAGE value="last" />
     <MESSAGE value="delete_Code_and_pycharm_git" />
     <MESSAGE value="after_delete_Code_and_pycharm_git" />
-    <option name="LAST_COMMIT_MESSAGE" value="after_delete_Code_and_pycharm_git" />
+    <MESSAGE value="test" />
+    <MESSAGE value="test1" />
+    <option name="LAST_COMMIT_MESSAGE" value="test1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
