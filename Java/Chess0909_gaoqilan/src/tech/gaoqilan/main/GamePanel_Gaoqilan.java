@@ -41,8 +41,17 @@ public class GamePanel_Gaoqilan extends JPanel {
          Image bgImg=Toolkit.getDefaultToolkit().getImage(bgPath);//获取Toolkit的实例
 
         //3.使用g.drawImage方法将图片绘制到面板上
-        g.drawImage(bgImg,0,0,this);
+        //这种方法没办法放大图片   g.drawImage(bgImg,0,0,this);
 
+        // 获取组件的尺寸
+        int width = getWidth();
+        int height = getHeight();
+
+        // 设置图片放大的目标尺寸，这里假设放大到组件的大小
+        // 可以根据需要设置为其他尺寸
+
+        // 绘制图片，将图片放大到目标宽度和高度
+        g.drawImage(bgImg,0 , 0, width, height, this);
         /*
         g.drawImage(Image img,int x , int y, targetWidth, targetHeight, this);
             img:要绘制的图像
@@ -52,6 +61,7 @@ public class GamePanel_Gaoqilan extends JPanel {
 
          */
 
+        //如何画棋子
         //1.准备图片路径
         String che0Path="pic"+ File.separator+"che0.png";
 
@@ -65,7 +75,8 @@ public class GamePanel_Gaoqilan extends JPanel {
         Image che0Img=Toolkit.getDefaultToolkit().getImage(che0Path);//获取Toolkit的实例
 
         //3.使用g.drawImage方法将图片绘制到面板上
-        g.drawImage(che0Img,0,0,this);
+        g.drawImage(che0Img,10,10,this);
+
 
 
     }
