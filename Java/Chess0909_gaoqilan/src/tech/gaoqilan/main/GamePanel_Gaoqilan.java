@@ -9,7 +9,7 @@ import java.io.File;
 public class GamePanel_Gaoqilan extends JPanel {
     //定义一个保存所有棋子的成员变量，类型是数组
     private Chess [] chesses = new Chess[32];
-
+    private Chess selectedChess;
     //无参构造方法：权限修饰符 类名{}
     //构造方法可以让我们自定义创建对象时，做一些必要的操作
     public GamePanel_Gaoqilan() {
@@ -25,8 +25,37 @@ public class GamePanel_Gaoqilan extends JPanel {
                 System.out.println("点击棋盘的坐标为：x=" + e.getX() + ", y=" + e.getY());
                 Point p=Chess.getPointFromXY(e.getX(), e.getY());
                 System.out.println("点击棋盘的网格坐标对象为：p=" + p);
-                Chess c = getChessByp(p);
-                System.out.println("点击的棋子对象为c=" + c);
+
+                if(selectedChess == null) {
+                    //第一次选择
+                    selectedChess=getChessByp(p);
+                }else{
+                    //重新选择、移动、吃子
+                    Chess c = getChessByp(p);
+                    if(c!=null){
+                        //第n次的时候有棋子
+                        //重新选择、吃子（判断是不是对方属性）
+                        if(c.getPlayer()==selectedChess.getPlayer()){
+                            //重新选择
+                            System.out.println("重新选择" );
+                        }else{
+                            //吃子
+                            System.out.println("吃子" );
+                            if(selectedChess.isAbleMove(p)){
+
+                            }
+                        }
+                    }else{
+                        //第n次点击的时候没有棋子，空白地方，那就是移动
+                        System.out.println("移动" );
+                        if(selectedChess.isAbleMove(p)){
+                            selectedChess.setP(p);
+                        }
+                    }
+                }
+                System.out.println("点击的棋子对象为 selectedChess=" + selectedChess);
+                //告诉棋盘，重新执行print方法，即刷新
+                repaint();
             }
         });
     }
@@ -81,6 +110,9 @@ public class GamePanel_Gaoqilan extends JPanel {
 
         drawChesses(g);
 
+        if(selectedChess !=null ){
+            selectedChess.drawRect(g);
+        }
 
 }
 
