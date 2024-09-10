@@ -17,6 +17,7 @@ public class GamePanel_Gaoqilan extends JPanel {
         System.out.println("GamePanel_Gaoqilan");
         createChesses();
         //操作棋子
+
         //点击事件
         addMouseListener(new MouseAdapter() {
             @Override
