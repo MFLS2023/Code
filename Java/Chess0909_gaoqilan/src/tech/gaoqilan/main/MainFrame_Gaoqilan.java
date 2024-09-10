@@ -11,7 +11,7 @@ public class MainFrame_Gaoqilan{
         //创建实例的格式：类名 实例名 = new 类的构造方法();
 
         //设置窗口的大小
-        frm.setSize(700,700);
+        frm.setSize(800,800);
 
         //设置窗口居中
         frm.setLocationRelativeTo(null);
