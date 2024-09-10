@@ -102,6 +102,7 @@ public class GamePanel_Gaoqilan extends JPanel {
         String[] names={"che","ma","xiang","shi","boss","shi","xiang","ma","che","pao","pao","bing","bing","bing","bing","bing"};
         int player=0;//棋子阵容
         String suffix= ".png";//图片后缀
+
         //int [] xs={10,90,170,250,330,410,490,570,650,90,490,10,170,330,490,650};
         //int [] ys={10,10,10,10,10,10,10,90,90,170,170,170,170,170};
         int [] xs = {1,2,3,4,5,6,7,8,9,2,8,1,3,5,7,9};
