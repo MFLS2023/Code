@@ -61,43 +61,103 @@ public class Chess {
 //    public int getIndex() {
 //        return index;
 //    }
+    //判断上边还是下边  1上 2下
+    public int isUpOrDown(){
+        if(initP.y<6){
+            return 1;
+        }else if(initP.y>5){
+            return 2;
+        }
+        return 0;
+    }
 
-    //判断棋子是否可以移动到目标位置
-    public boolean isAbleMove(Point tp){
-        if("boss".equals(name)){
-            //上面和下面的棋子操作有区别，只能直线，王宫范围内移动
-            //判断是否王宫范围内
-            if(tp.x<4||tp.x>6){
+    //判断是否王宫内
+    public boolean isHome(Point tp,GamePanel_Gaoqilan gamePanel){
+        if(tp.x<4||tp.x>6){
+            return false;
+        }
+        int upOrDown  = isUpOrDown();
+        if(upOrDown==1){
+            if(tp.y>3||tp.y<1){
                 return false;
             }
-            //上面和下面，这里写复杂的不规定哪方在上面和下面
-            if(initP.y<6){
-                if(tp.y>3||tp.y<1){
-                    return false;
-                }
-            }else if(initP.y>5){
-                if(tp.y<8||tp.y>10){
-                    return false;
-                }
+        }else if(upOrDown==2){
+            if(tp.y<8||tp.y>10){
+                return false;
             }
-            //判断是否走直线且只能走一步
-            //x轴直线还是y轴
-            if(p.y==tp.y){
-                //x
-                if(Math.abs(p.x-tp.x)==1){
-                    return true;
-                }
-            }else if(p.x==tp.x){
-                //y
-                if(Math.abs(p.y-tp.y)==1){
-                    return true;
-                }
-            }
-            return true;
-        }else if("shi".equals(name)){
+        }
+        return true;
+    }
 
+    //判断走直线还是斜线  3 x轴直线，横向移动  2y轴直线，纵向移动   1 正斜线移动
+    public int line(Point tp){
+        //x
+        if(p.y==tp.y){
+            return 3;
+        }else if(p.x==tp.x){
+            //y
+            return 2;
+        }else if(Math.abs(p.y-tp.y)==Math.abs(p.x-tp.x)){
+            //正斜线
+            return 1;
+        }
+        return 0;
+    }
+
+    //计算目标点与起点之间的距离，
+    public int getStep(Point tp){
+        int line=line(tp);
+        if(line==3){
+            //x
+            return Math.abs(p.x-tp.x);
+        }else if(line==2 || line==1){
+            //y或正斜线
+            return Math.abs(p.y-tp.y);
+        }
+        return 0;
+    }
+
+    //判断不能过河
+    public boolean isOverRiver(Point tp){
+        int upOrDown = isUpOrDown();
+        if(upOrDown==1){
+            //上
+            if(tp.y>5){
+                return false;
+            }
+        }else if(upOrDown==2){
+            //下
+            if(tp.y<6){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //判断是否蹩脚
+    public boolean isBieJiao(Point tp,GamePanel_Gaoqilan gamePanel){
+        Point center = new Point();//中心点
+        if("xiang".equals(name)){
+            center.x=(p.x+tp.x)/2;
+            center.y=(p.y+tp.y)/2;
+            return gamePanel.getChessByp(center) !=null;
+        } else if("ma".equals(name)) {
+
+//            return gamePanel.getChessByp() !=null;
+        }
+        return true;
+    }
+
+
+    //判断棋子是否可以移动到目标位置
+    public boolean isAbleMove(Point tp,GamePanel_Gaoqilan gamePanel){
+        if("boss".equals(name)){
+            return line(tp)>1 && isHome(tp,gamePanel) && getStep(tp)==1;
+        }else if("shi".equals(name)){
+            return line(tp)>1 && isHome(tp,gamePanel) && getStep(tp)==1;
         }else if("xiang".equals(name)){
 
+            return line(tp) == 1 && getStep(tp) == 2 && !isBieJiao(tp,gamePanel) && isOverRiver(tp);
         }else if("ma".equals(name)){
 
         }else if("che".equals(name)){
@@ -107,7 +167,7 @@ public class Chess {
         }else if("bing".equals(name)){
 
         }
-        return true;
+        return false;
     }
 
     //棋子绘制得到方法：

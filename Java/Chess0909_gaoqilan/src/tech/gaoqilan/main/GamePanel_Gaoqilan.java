@@ -9,6 +9,7 @@ import java.io.File;
 public class GamePanel_Gaoqilan extends JPanel {
     //定义一个保存所有棋子的成员变量，类型是数组
     private Chess [] chesses = new Chess[32];
+
     private Chess selectedChess;
     //无参构造方法：权限修饰符 类名{}
     //构造方法可以让我们自定义创建对象时，做一些必要的操作
@@ -38,17 +39,18 @@ public class GamePanel_Gaoqilan extends JPanel {
                         if(c.getPlayer()==selectedChess.getPlayer()){
                             //重新选择
                             System.out.println("重新选择" );
+                            selectedChess = c;
                         }else{
                             //吃子
                             System.out.println("吃子" );
-                            if(selectedChess.isAbleMove(p)){
+                            if(selectedChess.isAbleMove(p,GamePanel_Gaoqilan.this)){
 
                             }
                         }
                     }else{
                         //第n次点击的时候没有棋子，空白地方，那就是移动
                         System.out.println("移动" );
-                        if(selectedChess.isAbleMove(p)){
+                        if(selectedChess.isAbleMove(p,GamePanel_Gaoqilan.this)){
                             selectedChess.setP(p);
                         }
                     }
@@ -61,7 +63,7 @@ public class GamePanel_Gaoqilan extends JPanel {
     }
 
     //根据坐标找棋子,利用网格坐标p对象查找棋子对象
-    private Chess getChessByp(Point p){
+    public Chess getChessByp(Point p){
         for(Chess item:chesses){
             if(item.getP().equals(p)){
                 return item;
