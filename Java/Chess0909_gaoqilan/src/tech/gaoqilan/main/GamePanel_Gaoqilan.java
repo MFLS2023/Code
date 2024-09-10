@@ -99,42 +99,48 @@ public class GamePanel_Gaoqilan extends JPanel {
 
 
 
-        String[] names={"che","ma","xiang","shi","boss","shi","xiang","ma","che","pao","pao","bing","bing","bing","bing","bing"};
-        int player=0;//棋子阵容
-        String suffix= ".png";//图片后缀
+//        String[] names={"che","ma","xiang","shi","boss","shi","xiang","ma","che","pao","pao","bing","bing","bing","bing","bing"};
+//        int player=0;//棋子阵容
+//        String suffix= ".png";//图片后缀
+//
+//        //int [] xs={10,90,170,250,330,410,490,570,650,90,490,10,170,330,490,650};
+//        //int [] ys={10,10,10,10,10,10,10,90,90,170,170,170,170,170};
+//        int [] xs = {1,2,3,4,5,6,7,8,9,2,8,1,3,5,7,9};
+//        int [] ys = {1,1,1,1,1,1,1,1,1,3,3,4,4,4,4,4,};
+//
+//        int size = 40;//棋子大小
+//        int margin = 35;//棋盘的边距
+//        int space=87;//棋子之间间距
+//
+//        /*
+//            //String[]names=new String[3];
+//            //names[0]="che0.png";
+//            //int []a1 =null;//只是定义一个名为a1的数组，并且没有被初始化
+//            //a1[0] = 0;//java.lang.NullPointerException
+//         */
+//
+//        for(int i=0;i<names.length;i++){
+//            String path="pic"+ File.separator+names[i] + player + suffix;
+//            Image img=Toolkit.getDefaultToolkit().getImage(path);
+//            g.drawImage(img,margin-size/2+space*(xs[i]-1),
+//                    margin-size/2+space*(ys[i]-1)*5/6,this);
+//        }
+//
+//
+//        player=1;
+//        for(int i=0;i<names.length;i++){
+//            String path="pic"+ File.separator+names[i] + player + suffix;
+//            Image img=Toolkit.getDefaultToolkit().getImage(path);
+//            g.drawImage(img,margin-size/2+space*(reverX(xs[i])-1),
+//                    margin-size/2+space*(reverY(ys[i])-1)*5/6,this);
+//        }
+//    }
 
-        //int [] xs={10,90,170,250,330,410,490,570,650,90,490,10,170,330,490,650};
-        //int [] ys={10,10,10,10,10,10,10,90,90,170,170,170,170,170};
-        int [] xs = {1,2,3,4,5,6,7,8,9,2,8,1,3,5,7,9};
-        int [] ys = {1,1,1,1,1,1,1,1,1,3,3,4,4,4,4,4,};
-
-        int size = 40;//棋子大小
-        int margin = 35;//棋盘的边距
-        int space=87;//棋子之间间距
-
-        /*
-            //String[]names=new String[3];
-            //names[0]="che0.png";
-            //int []a1 =null;//只是定义一个名为a1的数组，并且没有被初始化
-            //a1[0] = 0;//java.lang.NullPointerException
-         */
-
-        for(int i=0;i<names.length;i++){
-            String path="pic"+ File.separator+names[i] + player + suffix;
-            Image img=Toolkit.getDefaultToolkit().getImage(path);
-            g.drawImage(img,margin-size/2+space*(xs[i]-1),
-                    margin-size/2+space*(ys[i]-1)*5/6,this);
-        }
-
-
-        player=1;
-        for(int i=0;i<names.length;i++){
-            String path="pic"+ File.separator+names[i] + player + suffix;
-            Image img=Toolkit.getDefaultToolkit().getImage(path);
-            g.drawImage(img,margin-size/2+space*(reverX(xs[i])-1),
-                    margin-size/2+space*(reverY(ys[i])-1)*5/6,this);
-        }
+    String[] names={"che","ma","xiang","shi","boss","shi","xiang","ma","che","pao","pao","bing","bing","bing","bing","bing"};
+    for(int i=0;i<names.length;i++){
+        Chess c = new Chess();
     }
+}
 
     private int reverX(int x){
         return 10-x;
