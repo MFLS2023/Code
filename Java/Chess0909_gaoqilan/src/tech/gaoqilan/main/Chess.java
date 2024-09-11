@@ -36,8 +36,8 @@ public class Chess {
     private int x,y;
     //棋子的网络坐标
     private Point p;
-    //Point类 棋子的网格坐标（官方提供的）,初始坐标，不改变
 
+    //Point类 棋子的网格坐标（官方提供的）,初始坐标，不改变
     private Point initP;
 
     public void setP(Point p){
@@ -52,15 +52,15 @@ public class Chess {
         return p;
     }
     //    //保存每个棋子的索引位置
-//    private int index;
+    private int index;
 
-//    public void setIndex(int index) {
-//        this.index = index;
-//    }
-//
-//    public int getIndex() {
-//        return index;
-//    }
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public int getIndex() {
+        return index;
+    }
     //判断上边还是下边  1上 2下
     public int isUpOrDown(){
         if(initP.y<6){
@@ -89,7 +89,7 @@ public class Chess {
         return true;
     }
 
-    //判断走直线还是斜线  3 x轴直线，横向移动  2y轴直线，纵向移动   1 正斜线移动
+    //判断走直线还是斜线  3 x轴直线，横向移动  2y轴直线，纵向移动   1 正斜线移动  -2都不是 0x轴日字（竖日），-1y轴日字（正日）
     public int line(Point tp){
         //x
         if(p.y==tp.y){
@@ -100,8 +100,17 @@ public class Chess {
         }else if(Math.abs(p.y-tp.y)==Math.abs(p.x-tp.x)){
             //正斜线
             return 1;
+        }else{
+            //日字
+            if(Math.abs(p.x-tp.x)==2 && Math.abs(p.y-tp.y)==1){
+                //x
+                    return 0;
+            }else if(Math.abs(p.x-tp.x)==1 && Math.abs(p.y-tp.y)==2){
+                //y
+                return -1;
+            }
         }
-        return 0;
+        return -2;
     }
 
     //计算目标点与起点之间的距离，
@@ -117,17 +126,17 @@ public class Chess {
         return 0;
     }
 
-    //判断不能过河
+    //判断不能过河,false 没有过河  true过了河
     public boolean isOverRiver(Point tp){
         int upOrDown = isUpOrDown();
         if(upOrDown==1){
             //上
-            if(tp.y>5){
+            if(tp.y<6){
                 return false;
             }
         }else if(upOrDown==2){
             //下
-            if(tp.y<6){
+            if(tp.y>5){
                 return false;
             }
         }
@@ -142,12 +151,114 @@ public class Chess {
             center.y=(p.y+tp.y)/2;
             return gamePanel.getChessByp(center) !=null;
         } else if("ma".equals(name)) {
+            //马走日字
+            int line =line(tp);
+            if(line ==0){
+                //x轴日字，求蹩脚点
+                center.x=(p.x+tp.x)/2;
+                center.y=p.y;
 
-//            return gamePanel.getChessByp() !=null;
+            }else if(line == -1){
+                center.y=(p.y+tp.y)/2;
+                center.x=p.x;
+            }
+            return gamePanel.getChessByp(center) !=null;
         }
         return true;
     }
 
+    //计算起点到目标点之间的棋子数量，不包括起点和目标点的位置
+    public int getCount(Point tp,GamePanel_Gaoqilan gamePanel){
+        int line=line(tp);
+        Point p1=new Point();
+        int start=0;
+        int end=0;
+        int count=0;//保存路径上棋子个数
+        //要区分横着走还是竖着走，并且区分上下左右
+        if(line ==2){
+            //y
+            p1.x=tp.x;
+            if(tp.y>p.y){
+                //从上往下走
+                start = p.y+1;
+                end=tp.y;
+
+            }else{
+                //从下往上
+                start = tp.y+1;
+                end=p.y;
+            }
+            //计算起点和终点的目标变化
+            for(int i=start;i<end;i++) {
+                p1.y = i;
+                if (gamePanel.getChessByp(p1) != null) {
+                    count++;
+                }
+            }
+
+        }else if(line ==3){
+            //x
+            p1.y=tp.y;
+            if(tp.x>p.x){
+                //从左往右走
+                start = p.x+1;
+                end=tp.x;
+
+            }else{
+                //从右往左
+                start = tp.x+1;
+                end=p.x;
+            }
+            for(int i=start;i<end;i++) {
+                p1.x = i;
+                if (gamePanel.getChessByp(p1) != null) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
+/*
+自己写的兵的
+
+    //判断过河没有  1上面的过了  2下面的过了  0没过
+    public int is_Overriver(){
+        int isUpOrDown = isUpOrDown();
+        if(isUpOrDown==1){
+            if(p.y>5){
+                System.out.println("1过河了");
+                    return 1;
+            }
+        }else if(isUpOrDown==2){
+            if(p.y<6){
+                System.out.println("2过河了");
+                return 2;
+            }
+        }
+        System.out.println("没过河了");
+        return 0;
+    }
+
+    //兵选择过河还是没过河的条件
+    public boolean bin_select(Point tp){
+        int overriver=is_Overriver();
+        System.out.println("overriver:"+overriver);
+        if (overriver !=0){
+            if( (Math.abs(tp.x-p.x)==1 && tp.y==p.y)||(tp.y-p.y==1 && tp.x==p.x && overriver==1)||(p.y-tp.y==1 &&tp.x==p.x && overriver==2)){
+                System.out.println("过河走得没问题");
+                return true;
+            }
+        }else{
+            if((tp.y-p.y==1 && tp.x==p.x && isUpOrDown()==1)||(p.y-tp.y==1 &&tp.x==p.x && isUpOrDown()==2)){
+                System.out.println("没过河没问题");
+                return true;
+            }
+        }
+        return false;
+    }
+
+ */
 
     //判断棋子是否可以移动到目标位置
     public boolean isAbleMove(Point tp,GamePanel_Gaoqilan gamePanel){
@@ -157,15 +268,24 @@ public class Chess {
             return line(tp)>1 && isHome(tp,gamePanel) && getStep(tp)==1;
         }else if("xiang".equals(name)){
 
-            return line(tp) == 1 && getStep(tp) == 2 && !isBieJiao(tp,gamePanel) && isOverRiver(tp);
+            return line(tp) == 1 && getStep(tp) == 2 && !isBieJiao(tp,gamePanel) && ! isOverRiver(tp);
         }else if("ma".equals(name)){
-
+            return (line(tp) ==0 || line(tp)==-1)  && !isBieJiao(tp,gamePanel);
         }else if("che".equals(name)){
-
+            return line(tp)>1 && getCount(tp,gamePanel)==0;
         }else if("pao".equals(name)){
-
+            Chess c=gamePanel.getChessByp(tp);
+            if(c!=null){
+                if(c.getPlayer()!=player){
+                    //吃子
+                    return line(tp)>1 && getCount(tp,gamePanel)==1;
+                }
+            }else{
+                //移动
+                return line(tp)>1 && getCount(tp,gamePanel)==0;
+            }
         }else if("bing".equals(name)){
-
+            return bin_select(tp);
         }
         return false;
     }

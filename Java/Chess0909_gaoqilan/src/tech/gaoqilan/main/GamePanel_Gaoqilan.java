@@ -44,6 +44,12 @@ public class GamePanel_Gaoqilan extends JPanel {
                             //吃子
                             System.out.println("吃子" );
                             if(selectedChess.isAbleMove(p,GamePanel_Gaoqilan.this)){
+                                /*
+                                    从数组中删掉被吃掉的棋子
+                                    修改要移动棋子的坐标
+                                 */
+                                chesses[c.getIndex()]=null;//从数组中删掉被吃掉的棋子
+                                selectedChess.setP(p);
 
                             }
                         }
@@ -63,14 +69,6 @@ public class GamePanel_Gaoqilan extends JPanel {
     }
 
     //根据坐标找棋子,利用网格坐标p对象查找棋子对象
-    public Chess getChessByp(Point p){
-        for(Chess item:chesses){
-            if(item.getP().equals(p)){
-                return item;
-            }
-        }
-        return null;
-    }
 
     private void createChesses(){
         String[] names={"che","ma","xiang","shi","boss",
@@ -85,6 +83,7 @@ public class GamePanel_Gaoqilan extends JPanel {
             c.setName(names[i]);//指定棋子名称
             c.setP(ps[i]);//指定棋子的网络坐标
             c.setPlayer(0);
+            c.setIndex(i);
             chesses[i]=c;//将棋子保存到数组中
         }
         for(int i=0;i<names.length;i++){
@@ -93,12 +92,16 @@ public class GamePanel_Gaoqilan extends JPanel {
             c.setP(ps[i]);//指定棋子的网络坐标
             c.setPlayer(1);
             c.reverse();
-            chesses[ i+16 ]=c;//将棋子保存到数组中
+            c.setIndex(i+16);
+            chesses[ c.getIndex()]=c;//将棋子保存到数组中
         }
     }
     private void drawChesses(Graphics g){
         for (Chess item:chesses){//for-each循环,不需要坐标的时候
-            item.draw(g,this);
+            if(item!=null){
+                item.draw(g,this);
+            }
+
         }
     }
     //有个问题，paint会被调用两次，然后同时又是创建，绘制，要将他们分开
@@ -117,6 +120,16 @@ public class GamePanel_Gaoqilan extends JPanel {
         }
 
 }
+    public Chess getChessByp(Point p){
+        for(Chess item:chesses){
+            if(item!=null&&item.getP().equals(p)){
+                return item;
+            }
+        }
+        return null;
+    }
+
+
 
 //    private int reverseX(int x){
 //        return 10-x;
