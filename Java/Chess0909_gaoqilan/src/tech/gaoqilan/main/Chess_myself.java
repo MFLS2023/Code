@@ -218,6 +218,46 @@
 //        }
 //        return count;
 //    }
+//      /*
+//自己写的兵的
+//
+//    //判断过河没有  1上面的过了  2下面的过了  0没过
+//    public int is_Overriver(){
+//        int isUpOrDown = isUpOrDown();
+//        if(isUpOrDown==1){
+//            if(p.y>5){
+//                System.out.println("1过河了");
+//                    return 1;
+//            }
+//        }else if(isUpOrDown==2){
+//            if(p.y<6){
+//                System.out.println("2过河了");
+//                return 2;
+//            }
+//        }
+//        System.out.println("没过河了");
+//        return 0;
+//    }
+//
+//    //兵选择过河还是没过河的条件
+//    public boolean bin_select(Point tp){
+//        int overriver=is_Overriver();
+//        System.out.println("overriver:"+overriver);
+//        if (overriver !=0){
+//            if( (Math.abs(tp.x-p.x)==1 && tp.y==p.y)||(tp.y-p.y==1 && tp.x==p.x && overriver==1)||(p.y-tp.y==1 &&tp.x==p.x && overriver==2)){
+//                System.out.println("过河走得没问题");
+//                return true;
+//            }
+//        }else{
+//            if((tp.y-p.y==1 && tp.x==p.x && isUpOrDown()==1)||(p.y-tp.y==1 &&tp.x==p.x && isUpOrDown()==2)){
+//                System.out.println("没过河没问题");
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
+//
+// */
 //
 //    //判断能不能前进
 //    public boolean isForward(Point tp){

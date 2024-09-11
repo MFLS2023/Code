@@ -1,5 +1,7 @@
 package tech.gaoqilan.main;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
@@ -260,6 +262,43 @@ public class Chess {
 
  */
 
+    //判断是否前进
+    public boolean isForward(Point tp) {
+        int upOrDown = isUpOrDown();
+        if (upOrDown == 1) {
+            //上
+            if (tp.y > p.y) {
+                return true;
+            }
+        } else if (upOrDown == 2) {
+            //下
+            if (tp.y < p.y) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    //判断是否后退
+    public boolean isBack(Point tp) {
+        int upOrDown = isUpOrDown();
+        if (upOrDown == 1) {
+            //上
+            if (tp.y < p.y) {
+                return true;
+            }
+        } else if (upOrDown == 2) {
+            //下
+            if (tp.y > p.y) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
     //判断棋子是否可以移动到目标位置
     public boolean isAbleMove(Point tp,GamePanel_Gaoqilan gamePanel){
         if("boss".equals(name)){
@@ -285,7 +324,15 @@ public class Chess {
                 return line(tp)>1 && getCount(tp,gamePanel)==0;
             }
         }else if("bing".equals(name)){
-            return bin_select(tp);
+//            return bin_select(tp);
+            if(line(tp)<2 || getStep(tp)>1){
+                return false;
+            }
+            if(isOverRiver(p)){
+                return !isBack(tp);
+            }else{
+                return isForward(tp);
+            }
         }
         return false;
     }

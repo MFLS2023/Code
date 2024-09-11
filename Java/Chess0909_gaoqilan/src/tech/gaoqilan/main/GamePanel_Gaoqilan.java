@@ -9,8 +9,11 @@ import java.io.File;
 public class GamePanel_Gaoqilan extends JPanel {
     //定义一个保存所有棋子的成员变量，类型是数组
     private Chess [] chesses = new Chess[32];
-
+    //当前选中的棋子
     private Chess selectedChess;
+    //记住当前选中的阵营
+    public int curPlayer=0;
+
     //无参构造方法：权限修饰符 类名{}
     //构造方法可以让我们自定义创建对象时，做一些必要的操作
     public GamePanel_Gaoqilan() {
@@ -29,7 +32,12 @@ public class GamePanel_Gaoqilan extends JPanel {
 
                 if(selectedChess == null) {
                     //第一次选择
+
                     selectedChess=getChessByp(p);
+                    if(selectedChess!=null && selectedChess.getPlayer()==curPlayer) {
+                        //说明选的是敌方那个的棋子
+                        selectedChess=null;
+                    }
                 }else{
                     //重新选择、移动、吃子
                     Chess c = getChessByp(p);
@@ -50,7 +58,7 @@ public class GamePanel_Gaoqilan extends JPanel {
                                  */
                                 chesses[c.getIndex()]=null;//从数组中删掉被吃掉的棋子
                                 selectedChess.setP(p);
-
+                                overMyTurn();
                             }
                         }
                     }else{
@@ -58,16 +66,25 @@ public class GamePanel_Gaoqilan extends JPanel {
                         System.out.println("移动" );
                         if(selectedChess.isAbleMove(p,GamePanel_Gaoqilan.this)){
                             selectedChess.setP(p);
+                            overMyTurn();
                         }
                     }
                 }
                 System.out.println("点击的棋子对象为 selectedChess=" + selectedChess);
                 //告诉棋盘，重新执行print方法，即刷新
                 repaint();
+                //刷新棋盘说明走完了
+
             }
         });
     }
 
+    //结束当前回合
+    private void overMyTurn(){
+        curPlayer=curPlayer ==0? 1:0;
+        //不要忘记框置为空
+        selectedChess=null;
+    }
     //根据坐标找棋子,利用网格坐标p对象查找棋子对象
 
     private void createChesses(){
