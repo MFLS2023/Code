@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 
-public class Chess {
+public abstract class Chess {
     //棋子大小
     private static final int SIZE=30;
     //棋盘外边距
@@ -37,7 +37,7 @@ public class Chess {
     //棋子绘制时的坐标位置
     private int x,y;
     //棋子的网络坐标
-    private Point p;
+    protected Point p;
 
     //Point类 棋子的网格坐标（官方提供的）,初始坐标，不改变
     private Point initP;
@@ -63,6 +63,14 @@ public class Chess {
     public int getIndex() {
         return index;
     }
+
+    public  Chess(String name,int player,Point p){
+        this.name=name;
+        this.player=player;
+        setP(p);
+    }
+
+
     //判断上边还是下边  1上 2下
     public int isUpOrDown(){
         if(initP.y<6){
@@ -300,44 +308,49 @@ public class Chess {
 
 
     //判断棋子是否可以移动到目标位置
-    public boolean isAbleMove(Point tp,GamePanel_Gaoqilan gamePanel){
-        if("boss".equals(name)){
-            return line(tp)>1 && isHome(tp,gamePanel) && getStep(tp)==1;
-        }else if("shi".equals(name)){
-            return line(tp)>1 && isHome(tp,gamePanel) && getStep(tp)==1;
-        }else if("xiang".equals(name)){
+    public abstract boolean isAbleMove(Point tp,GamePanel_Gaoqilan gamePanel);
+//    {
+//        if("boss".equals(name)){
+//            return line(tp)>1 && isHome(tp,gamePanel) && getStep(tp)==1;
+//        }else if("shi".equals(name)){
+//            return line(tp)>1 && isHome(tp,gamePanel) && getStep(tp)==1;
+//        }else if("xiang".equals(name)){
+//
+//            return line(tp) == 1 && getStep(tp) == 2 && !isBieJiao(tp,gamePanel) && ! isOverRiver(tp);
+//        }else if("ma".equals(name)){
+//            return (line(tp) ==0 || line(tp)==-1)  && !isBieJiao(tp,gamePanel);
+//        }else if("che".equals(name)){
+//            return line(tp)>1 && getCount(tp,gamePanel)==0;
+//        }else if("pao".equals(name)){
+//            Chess c=gamePanel.getChessByp(tp);
+//            if(c!=null){
+//                if(c.getPlayer()!=player){
+//                    //吃子
+//                    return line(tp)>1 && getCount(tp,gamePanel)==1;
+//                }
+//            }else{
+//                //移动
+//                return line(tp)>1 && getCount(tp,gamePanel)==0;
+//            }
+//        }else if("bing".equals(name)){
+////            return bin_select(tp);
+//            if(line(tp)<2 || getStep(tp)>1){
+//                return false;
+//            }
+//            if(isOverRiver(p)){
+//                return !isBack(tp);
+//            }else{
+//                return isForward(tp);
+//            }
+//        }
+//        return false;
+//    }
 
-            return line(tp) == 1 && getStep(tp) == 2 && !isBieJiao(tp,gamePanel) && ! isOverRiver(tp);
-        }else if("ma".equals(name)){
-            return (line(tp) ==0 || line(tp)==-1)  && !isBieJiao(tp,gamePanel);
-        }else if("che".equals(name)){
-            return line(tp)>1 && getCount(tp,gamePanel)==0;
-        }else if("pao".equals(name)){
-            Chess c=gamePanel.getChessByp(tp);
-            if(c!=null){
-                if(c.getPlayer()!=player){
-                    //吃子
-                    return line(tp)>1 && getCount(tp,gamePanel)==1;
-                }
-            }else{
-                //移动
-                return line(tp)>1 && getCount(tp,gamePanel)==0;
-            }
-        }else if("bing".equals(name)){
-//            return bin_select(tp);
-            if(line(tp)<2 || getStep(tp)>1){
-                return false;
-            }
-            if(isOverRiver(p)){
-                return !isBack(tp);
-            }else{
-                return isForward(tp);
-            }
-        }
-        return false;
-    }
+    //定义新的棋子类
+//    public abstract boolean isAbleMove(Point tp,GamePanel_Gaoqilan gamePanel);
 
-    //棋子绘制得到方法：
+
+    //棋子绘制的方法：
     //Graphics 属性  JPanel  panel
 
     public void draw(Graphics g, JPanel panel) {

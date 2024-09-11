@@ -91,22 +91,25 @@ public class GamePanel_Gaoqilan extends JPanel {
         String[] names={"che","ma","xiang","shi","boss",
                 "shi","xiang","ma","che","pao","pao","bing",
                 "bing","bing","bing","bing"};
-        Point[] ps={new Point(1,1),new Point(2,1),new Point(3,1),new Point(4,1),
-                new Point(5,1),new Point(6,1),new Point(7,1),new Point(8,1),new Point(9,1),
-                new Point(2,3),new Point(8,3),
-                new Point(1,4),new Point(3,4),new Point(5,4),new Point(7,4),new Point(9,4)};
+        int[] xs={1,2,3,4,5,6,7,8,9,2,8,1,3,5,7,9};
         for(int i=0;i<names.length;i++){
-            Chess c = new Chess();//创建棋子类的对象
-            c.setName(names[i]);//指定棋子名称
-            c.setP(ps[i]);//指定棋子的网络坐标
-            c.setPlayer(0);
+//            Chess c = new Chess();//创建棋子类的对象
+//            Chess c=new Che(0,1)//创建车
+//            Chess c1=new Ma(0,2);
+            Chess c=ChessFactory.createChess(names[i],0,xs[i]);
+
+            //解耦合，如上代码耦合度非常高，可以使用多态和开发模式来降耦合度
+//            c.setName(names[i]);//指定棋子名称
+//            c.setP(xs[i]);//指定棋子的网络坐标
+//            c.setPlayer(0);
             c.setIndex(i);
             chesses[i]=c;//将棋子保存到数组中
         }
         for(int i=0;i<names.length;i++){
-            Chess c = new Chess();//创建棋子类的对象
-            c.setName(names[i]);//指定棋子名称
-            c.setP(ps[i]);//指定棋子的网络坐标
+//            Chess c = new Chess();//创建棋子类的对象
+//            c.setName(names[i]);//指定棋子名称
+//            c.setP(xs[i]);//指定棋子的网络坐标
+            Chess c=ChessFactory.createChess(names[i],1,xs[i]);
             c.setPlayer(1);
             c.reverse();
             c.setIndex(i+16);
