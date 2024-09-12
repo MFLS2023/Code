@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7359e213-1f38-4699-8a8a-d71296b95873" name="更改" comment="anaconda3" />
+    <list default="true" id="7359e213-1f38-4699-8a8a-d71296b95873" name="更改" comment="anaconda3">
+      <change beforePath="$PROJECT_DIR$/../CS61a" beforeDir="false" afterPath="$PROJECT_DIR$/../CS61a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Chess0909_gaoqilan/src/tech/gaoqilan/main/GamePanel_Gaoqilan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Chess0909_gaoqilan/src/tech/gaoqilan/main/GamePanel_Gaoqilan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Chess0909_gaoqilan/src/tech/gaoqilan/main/MainFrame_Gaoqilan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Chess0909_gaoqilan/src/tech/gaoqilan/main/MainFrame_Gaoqilan.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,22 +37,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zhipai.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/study/Code/Python&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.test.executor": "Run",
+    "Python.zhipai.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/study/Code/Python/AI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\study\Code\Python" />
@@ -83,6 +87,7 @@
       <workItem from="1725456483327" duration="122000" />
       <workItem from="1725456682735" duration="687000" />
       <workItem from="1725711843222" duration="32000" />
+      <workItem from="1726105659341" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="anaconda3">
       <option name="closed" value="true" />

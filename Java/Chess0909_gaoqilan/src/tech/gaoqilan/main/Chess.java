@@ -5,8 +5,9 @@ import org.omg.CORBA.PUBLIC_MEMBER;
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
+import java.io.Serializable;
 
-public abstract class Chess {
+public abstract class Chess implements Serializable {
     //棋子大小
     private static final int SIZE=30;
     //棋盘外边距

@@ -5,15 +5,48 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
+import java.util.LinkedList;
 
 public class GamePanel_Gaoqilan extends JPanel {
     //定义一个保存所有棋子的成员变量，类型是数组
     private Chess [] chesses = new Chess[32];
+
+    public Chess[] getChesses() {
+        return chesses;
+    }
+
+    public void setChesses(Chess[] chesses) {
+        this.chesses = chesses;
+        repaint();
+    }
+
+    //Java集合的使用
+    private LinkedList<Record> huiqiList = new LinkedList();
     //当前选中的棋子
     private Chess selectedChess;
     //记住当前选中的阵营
-    public int curPlayer=0;
+    public int curPlayer=1;
+    //提示的label
+    private JLabel hintLabel;
 
+    public void setHintLabel(JLabel hintLabel){
+        this.hintLabel=hintLabel;
+    }
+
+    public void huiqi(){
+        Record record=huiqiList.pollLast();
+        //将操作的棋子的坐标修改回去
+        record.getChess().setP(record.getStart());
+        chesses[record.getChess().getIndex()]=record.getChess();
+        if(record.getEatedChess()!=null){
+            chesses[record.getEatedChess().getIndex()]=record.getEatedChess();
+
+        }
+        curPlayer=1-(1-record.getChess().getPlayer());
+        overMyTurn();
+        //刷新棋盘
+        repaint();
+    }
     //无参构造方法：权限修饰符 类名{}
     //构造方法可以让我们自定义创建对象时，做一些必要的操作
     public GamePanel_Gaoqilan() {
@@ -37,6 +70,7 @@ public class GamePanel_Gaoqilan extends JPanel {
                     if(selectedChess!=null && selectedChess.getPlayer()==curPlayer) {
                         //说明选的是敌方那个的棋子
                         selectedChess=null;
+                        hintLabel.setText("<html> 不能选对方的棋子<br/>"+(curPlayer ==0? "黑方走":"红方走")+"<html>");
                     }
                 }else{
                     //重新选择、移动、吃子
@@ -56,6 +90,14 @@ public class GamePanel_Gaoqilan extends JPanel {
                                     从数组中删掉被吃掉的棋子
                                     修改要移动棋子的坐标
                                  */
+                                //将被吃的棋子放入recode中
+                                Record record=new Record();
+                                record.setChess(selectedChess);
+                                record.setStart(selectedChess.getP());
+                                record.setEnd(selectedChess.getP());
+                                record.setEatedChess(c);
+                                huiqiList.add(record);
+
                                 chesses[c.getIndex()]=null;//从数组中删掉被吃掉的棋子
                                 selectedChess.setP(p);
                                 overMyTurn();
@@ -65,12 +107,20 @@ public class GamePanel_Gaoqilan extends JPanel {
                         //第n次点击的时候没有棋子，空白地方，那就是移动
                         System.out.println("移动" );
                         if(selectedChess.isAbleMove(p,GamePanel_Gaoqilan.this)){
+                            Record record=new Record();
+                            record.setChess(selectedChess);
+                            record.setStart(selectedChess.getP());
+                            record.setEnd(selectedChess.getP());
+                            record.setEatedChess(c);
+                            huiqiList.add(record);
+
                             selectedChess.setP(p);
                             overMyTurn();
                         }
                     }
                 }
                 System.out.println("点击的棋子对象为 selectedChess=" + selectedChess);
+
                 //告诉棋盘，重新执行print方法，即刷新
                 repaint();
                 //刷新棋盘说明走完了
@@ -81,10 +131,16 @@ public class GamePanel_Gaoqilan extends JPanel {
 
     //结束当前回合
     private void overMyTurn(){
-        curPlayer=curPlayer ==0? 1:0;
+        curPlayer =curPlayer ==0? 1:0;
         //不要忘记框置为空
         selectedChess=null;
+        hintLabel.setText(curPlayer ==0? "黑方走":"红方走");
     }
+
+    public int getCurPlayer(){
+        return curPlayer;
+    }
+
     //根据坐标找棋子,利用网格坐标p对象查找棋子对象
 
     private void createChesses(){
