@@ -21,7 +21,7 @@
 //
 //            如何在JPanel画一张图片
 //                1.准备图片路径
-//                    File.separator ；路径分隔符
+//                    File.separator ；路径+分隔符
 //                        windows: \ 反斜杠
 //                        linux macos /斜杠
 //                        Java是不区分的，官方自动会帮你区分
