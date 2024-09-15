@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7359e213-1f38-4699-8a8a-d71296b95873" name="更改" comment="anaconda3">
+      <change afterPath="$PROJECT_DIR$/AI/pyqt5/ui_uart_tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS61a" beforeDir="false" afterPath="$PROJECT_DIR$/../CS61a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Chess0909_gaoqilan/src/tech/gaoqilan/main/GamePanel_Gaoqilan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Chess0909_gaoqilan/src/tech/gaoqilan/main/GamePanel_Gaoqilan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Chess0909_gaoqilan/src/tech/gaoqilan/main/MainFrame_Gaoqilan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Chess0909_gaoqilan/src/tech/gaoqilan/main/MainFrame_Gaoqilan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/pyqt5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AI/pyqt5/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     "Python.zhipai.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/study/Code/Python/AI",
+    "last_opened_file_path": "D:/study/Code/Python",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,6 +88,7 @@
       <workItem from="1725456682735" duration="687000" />
       <workItem from="1725711843222" duration="32000" />
       <workItem from="1726105659341" duration="77000" />
+      <workItem from="1726408782016" duration="356000" />
     </task>
     <task id="LOCAL-00001" summary="anaconda3">
       <option name="closed" value="true" />
