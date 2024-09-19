@@ -1,60 +1,58 @@
 package datastructures;
 
-public class ArrayList<E> {
-    private int size;
-    private int capacity;
-    private Object[] array;
-
+public class ArrayList<E>{
+     int size;
+     int capacity;
+     Object[] array;
     public ArrayList(){
-        this.size = 0;
-        this.capacity=10;
-        this.array=new Object[capacity];
+        size = 0;
+        capacity = 10;
+        array=new Object[this.capacity];
+
     }
 
-    public void insert(int index,E elements){
+    @SuppressWarnings("unchecked")
+    public void insert(int index,E element){
         if(index<0||index>size){
             throw new IndexOutOfBoundsException("插入位置非法");
         }
-
         if(size==capacity){
-            expandCapacity();
+            ExpandCapacity();
         }
-
         for(int i=size;i>index;i--){
             array[i]=array[i-1];
         }
-        array[index]=elements;
+        array[index]=element;
         size++;
-
     }
 
-    public void add(E elements){
-        insert(size,elements);
+    public void add(E element){
+        insert(size,element);
     }
 
-
-    public void delete(int index){
+    @SuppressWarnings("unchecked")
+    public void remove(int index){
         if(index<0||index>size-1){
             throw new IndexOutOfBoundsException("删除位置非法");
         }
         for(int i=index;i<size-1;i++){
             array[i]=array[i+1];
         }
-        array[size-1]=null;
         size--;
     }
 
-    public void update(int index,E elements){
+    @SuppressWarnings("unchecked")
+    public void update(int index,E element){
         if(index<0||index>size-1){
             throw new IndexOutOfBoundsException("更新位置非法");
-
         }
-        array[index]=elements;
+        array[index]=element;
     }
 
-    public int findelements(E elements){
+    @SuppressWarnings("unchecked")
+    public int findElement(E element){
         for(int i=0;i<size;i++){
-            if(array[i].equals(elements)){
+            if(array[i]==element){
                 return i;
             }
         }
@@ -62,34 +60,35 @@ public class ArrayList<E> {
     }
 
     @SuppressWarnings("unchecked")
-    public E get(int index){
-        if(index<0||index>=size){
+    public E getElement(int index){
+        if(index<0||index>size-1){
             throw new IndexOutOfBoundsException("查找位置非法");
         }
-        return (E) array[index];
+        return (E)array[index];
     }
 
     public int getSize(){
-        return this.size;
+        return size;
     }
 
     public int getCapacity(){
-        return this.capacity;
+        return capacity;
     }
 
-    public void expandCapacity(){
-        int newCapacity=capacity*2;
-        Object[] newArray=new Object[newCapacity];
-        capacity=newCapacity;
+    public void ExpandCapacity(){
+        int newcapacity=capacity+(capacity>>1);
+        Object [] newArray = new Object[newcapacity];
         for(int i=0;i<size;i++){
             newArray[i]=array[i];
         }
         array=newArray;
+        capacity=newcapacity;
+
     }
 
     @Override
-    public String toString() {
-        StringBuilder builder=new StringBuilder();
+    public String toString(){
+        StringBuilder builder = new StringBuilder();
         builder.append("[");
         for(int i=0;i<size;i++){
             builder.append(array[i]);
@@ -101,10 +100,8 @@ public class ArrayList<E> {
         return builder.toString();
     }
 
+
 }
-
-
-
 
 
 

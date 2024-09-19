@@ -16,13 +16,21 @@ public class Main {
     list.update(5,1999);
     System.out.println("顺序表更新后的内容"+list);
 
-    list.delete(8);
+    for(int i=0;i<10;i++){
+        list.add(first+second);
+        first=second;
+        second=first+second;
+    }
 
-    System.out.println(list);
+    System.out.println("顺序表扩容后内容为："+list);
 
-    System.out.println("顺序表第3个元素为  "+list.get(3));
+    list.remove(8);
 
-    System.out.println("顺序表是否存在元素  17  "+list.findelements(17));
+    System.out.println("删除第8个元素后"+list);
+
+    System.out.println("顺序表第3个元素为  "+list.getElement(3));
+
+    System.out.println("顺序表是否存在元素  17  "+list.findElement(17));
 
 
 
