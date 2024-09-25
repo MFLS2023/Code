@@ -1,7 +1,8 @@
 # DimmerSwitch class
 
 class DimmerSwitch():
-    def __init__(self):
+    def __init__(self,label):
+        self.label = label
         self.switchIsOn = False
         self.brightness = 0
         
@@ -21,6 +22,7 @@ class DimmerSwitch():
 
     # Extra method for debugging
     def show(self):
+        print("Label",self.label)
         print('Switch is on?', self.switchIsOn)
         print('Brightness is:', self.brightness)
 
