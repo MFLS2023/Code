@@ -1,4 +1,4 @@
-package sorting;
+package class004_sorting;
 
 public class SortingAlgorithms {
 
@@ -9,6 +9,7 @@ public class SortingAlgorithms {
 
         }
 
+        //选择排序：从小到大，每次找到最小的并记录下标，然后走完一轮交换，接着从下一个数字开始，循环往复直到完成排序
         public static void selectionSort(int[]arr){
             if(arr == null || arr.length <2){
                 return;
@@ -24,6 +25,7 @@ public class SortingAlgorithms {
             }
         }
 
+        //冒泡排序：从大到小，每次内层循环中如果后面的数比前面的大，则交换，
         public static void bubbleSort(int[]arr){
             if(arr == null || arr.length <2){
                 return;
@@ -37,6 +39,7 @@ public class SortingAlgorithms {
             }
         }
 
+        //插入排序：从小到大，如果前一个数比当前的数要大，则交换，直到前一个数比当前数小为止
         public static void insertionSort(int[]arr){
             if(arr == null || arr.length <2){
                 return;

@@ -1,12 +1,12 @@
-package sorting;
+package class004_sorting;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arrSelection = {64, 25, 12, 22, 11};
-        int[] arrBubble = {64, 34, 25, 12, 22, 11, 90};
-        int[] arrInsertion = {12, 11, 13, 5, 6};
+        int[] arrSelection = {3,4,5,2,1};
+        int[] arrBubble = {3,4,5,2,1};
+        int[] arrInsertion = {3,4,5,2,1};
 
         // 选择排序
         System.out.println("原数组: " + Arrays.toString(arrSelection));
