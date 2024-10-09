@@ -90,6 +90,7 @@ public class Main{
             }
             swap(arr,i,minIndex);
         }
+        //System.out.println("选择排序结果："+Arrays.toString(arr));
     }
 
     //冒泡排序
@@ -104,6 +105,7 @@ public class Main{
                 }
             }
         }
+        //System.out.println("冒泡排序结果："+Arrays.toString(arr));
     }
 
     //插入排序
@@ -116,11 +118,7 @@ public class Main{
                 swap(arr,j,j+1);
             }
         }
-
+        //System.out.println("插入排序结果："+Arrays.toString(arr));
     }
-
-
-
-
 
 }

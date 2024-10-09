@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7359e213-1f38-4699-8a8a-d71296b95873" name="更改" comment="9.28">
-      <change afterPath="$PROJECT_DIR$/../Java/Algorithm_Java/src/class005_SelectBubbleInsert/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/Algorithm_Java/src/class09_ListReverse/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS61a" beforeDir="false" afterPath="$PROJECT_DIR$/../CS61a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java/Algorithm_Java/.idea/AnyDoorSettingsState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Algorithm_Java/.idea/AnyDoorSettingsState.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Algorithm_Java/src/class006_binarysearch/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Algorithm_Java/src/class006_binarysearch/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Algorithm_Java/src/sorting/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Algorithm_Java/src/class004_sorting/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Algorithm_Java/src/sorting/SortingAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Algorithm_Java/src/class004_sorting/SortingAlgorithms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Algorithm_Java/src/class005_SelectBubbleInsert/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Algorithm_Java/src/class005_SelectBubbleInsert/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,6 +110,7 @@
       <workItem from="1727532528468" duration="104000" />
       <workItem from="1728348520015" duration="71000" />
       <workItem from="1728349265738" duration="194000" />
+      <workItem from="1728457895764" duration="1395000" />
     </task>
     <task id="LOCAL-00001" summary="anaconda3">
       <option name="closed" value="true" />
