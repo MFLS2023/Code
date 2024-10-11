@@ -3,6 +3,28 @@
   <component name="LeetcodeEditorlabuladong">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[1019]链表中的下一个更大节点.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/doc/content/[1019]链表中的下一个更大节点.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1019" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[1019]链表中的下一个更大节点.java" />
+              <option name="titleSlug" value="next-greater-node-in-linked-list" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[1669]合并两个链表.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/doc/content/[1669]合并两个链表.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1669" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[1669]合并两个链表.java" />
+              <option name="titleSlug" value="merge-in-between-linked-lists" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[206]反转链表.java">
           <value>
             <LeetcodeEditor>
@@ -22,6 +44,39 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[2]两数相加.java" />
               <option name="titleSlug" value="add-two-numbers" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[86]分隔链表.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/doc/content/[86]分隔链表.md" />
+              <option name="frontendQuestionId" value="leetcode.cn86" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[86]分隔链表.java" />
+              <option name="titleSlug" value="partition-list" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[面试题 02.05]链表求和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/doc/content/[面试题 02.05]链表求和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 02.05" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[面试题 02.05]链表求和.java" />
+              <option name="titleSlug" value="sum-lists-lcci" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[面试题 02.08]环路检测.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/doc/content/[面试题 02.08]环路检测.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 02.08" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../leetcode/leetcode/editor/cn/[面试题 02.08]环路检测.java" />
+              <option name="titleSlug" value="linked-list-cycle-lcci" />
             </LeetcodeEditor>
           </value>
         </entry>
