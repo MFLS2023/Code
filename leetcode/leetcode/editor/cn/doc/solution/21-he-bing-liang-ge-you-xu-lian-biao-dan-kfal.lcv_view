@@ -1,0 +1,47 @@
+> Problem: [21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/description/)
+
+[TOC]
+
+# 思路
+
+> 本质是维护一个栈，首先弄个哑元节点，然后当前节点cur指向哑元dum(dum是负责保存起点的，而cur是负责移动、操作的，这种分工明确的设计避免了逻辑混乱)，while循环中，cur会接上(追逐)l1和l2头头中的当前较小者，随着l1和l2中的元素被逐个遍历，当一个为空，则这场追逐结束。
+
+# Code
+
+* []
+
+```C++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        ListNode* dum=new ListNode(0);
+        ListNode* cur=dum;
+
+        while(list1!=nullptr && list2!=nullptr){
+            if(list1->val<=list2->val){
+                cur->next=list1;
+                list1=list1->next;
+            }
+            else{
+                cur->next=list2;
+                list2=list2->next;
+            }
+            cur=cur->next;
+        }
+
+        cur->next=list1!=nullptr?list1:list2;
+        return dum->next;
+    }
+};
+```
+
