@@ -10,6 +10,16 @@ public class LoginJFrame extends JFrame {
     public LoginJFrame() {
         //创建登录界面的时候，同时给这个界面去设置一些信息
         this.setSize(488,430);
+        //设置标题
+        this.setTitle("登录界面");
+        //设置游戏界面置顶
+        this.setAlwaysOnTop(true);
+        //设置界面居中
+        this.setLocationRelativeTo(null);
+        //设置程序随游戏界面的关闭而停止
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
         this.setVisible(true);
+
     }
 }
