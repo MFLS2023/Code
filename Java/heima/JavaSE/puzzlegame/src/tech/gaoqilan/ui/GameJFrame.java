@@ -58,10 +58,10 @@ public class GameJFrame extends JFrame implements KeyListener {
             tempArr[i] = temp;
         }
         //3.遍历数组
-        for (int i = 0; i < tempArr.length; i++) {
-            System.out.println(tempArr[i]+" ");
-        }
-        System.out.println();
+//        for (int i = 0; i < tempArr.length; i++) {
+//            System.out.println(tempArr[i]+" ");
+//        }
+//        System.out.println();
 
         //4.创建二维数组
 
@@ -81,7 +81,7 @@ public class GameJFrame extends JFrame implements KeyListener {
         int index = 0;
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
-                if (tempArr[i] == 0) {
+                if (tempArr[index] == 0) {
                     x = i;
                     y = j;
                     System.out.println(x+"   "+y);
@@ -96,7 +96,7 @@ public class GameJFrame extends JFrame implements KeyListener {
     //初始化图片
     //添加图片的时候,就需要按照二维数组中管理的数据添加图片
     private void initImage() {
-        //清楚已经生成的图片,
+        //清除已经生成的图片,
         this.getContentPane().removeAll();
 
         for (int i = 0; i < 4; i++) {
@@ -198,45 +198,51 @@ public class GameJFrame extends JFrame implements KeyListener {
         int a = 0;
         int b = 0;
         if (code == 37) {
-            if(y==3){
-                return;
-            }
-            data[x ][y] = data[x][y+1];
-            data[x][y+1] = 0;
-            y++;
-            initImage();
-            System.out.println("向左移动");
-        } else if (code == 38) {
-            if(x==3){
-                return;
-            }
-            data[x][y] = data[x+1][y];
-            data[x+1][y] = 0;
-            x++;
-            initImage();
-            System.out.println("向上移动");
-        } else if (code == 39) {
             if(y==0){
                 return;
             }
-            data[x ][y] = data[x][y-1];
-            data[x][y-1] = 0;
-            y--;
-            initImage();
-            System.out.println("向右移动");
-        } else if (code == 40) {
+//            data[x ][y] = data[x][y+1];
+//            data[x][y+1] = 0;
+//            y++;
+//            initImage();
+            b--;
+            System.out.println("向左移动");
+        } else if (code == 38) {
             if(x==0){
                 return;
             }
-            data[x][y] = data[x-1][y];
-            data[x-1][y] = 0;
-            x--;
-            initImage();
+//            data[x][y] = data[x+1][y];
+//            data[x+1][y] = 0;
+//            x++;
+//            initImage();
+            a--;
+            System.out.println("向上移动");
+        } else if (code == 39) {
+            if(y==3){
+                return;
+            }
+//            data[x][y] = data[x][y-1];
+//            data[x][y-1] = 0;
+//            y--;
+//            initImage();
+            b++;
+            System.out.println("向右移动");
+        } else if (code == 40) {
+            if(x==3){
+                return;
+            }
+//            data[x][y] = data[x-1][y];
+//            data[x-1][y] = 0;
+//            x--;
+//            initImage();
+            a++;
             System.out.println("向下移动");
         }
-
-
-
+        data[x][y] = data[x+a][y+b];
+        data[x+a][y+b]=0;
+        x+=a;
+        y+=b;
+        initImage();
 
     }
 }
