@@ -158,37 +158,51 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
 
 
     private void initJFrameBar() {
-        //初始化菜单
-        //创建多个菜单
-        JMenuBar JMenuBar = new JMenuBar();
-
-        //创建菜单上面的两个选项的对象（功能、关于我们）
+        //创建菜单并添加到界面当中
+//1.创建菜单JMenuBar的对象
+        JMenuBar jMenuBar = new JMenuBar();
+//2.创建菜单上面的两个选项JMenu
         JMenu functionJMenu = new JMenu("功能");
-        JMenu aboutusJMenu = new JMenu("关于我们");
+        JMenu aboutJMenu = new JMenu("关于我们");
 
-        //
+//创建更换图片
+        JMenu changeImage = new JMenu("更换图片");
+
+//3.创建JMenuItem的对象
+        JMenuItem girl = new JMenuItem("美女");
+        JMenuItem animal = new JMenuItem("动物");
+        JMenuItem sport = new JMenuItem("运动");
+        JMenuItem repalyItem = new JMenuItem("重新游戏");
+        JMenuItem reLoginItem = new JMenuItem("重新登录");
+        JMenuItem closeItem = new JMenuItem("关闭游戏");
+        JMenuItem accountItem = new JMenuItem("公众号");
 
 
-        //将每一个条目加到选项中
-        functionJMenu.add(replaygame);
-        functionJMenu.add(reloginItem);
+
+//4.把美女，动物，运动添加到更换图片当中
+        changeImage.add(girl);
+        changeImage.add(animal);
+        changeImage.add(sport);
+
+//5.把更换图片，重新游戏，重新登录，关闭游戏添加到功能当中
+        functionJMenu.add(changeImage);
+        functionJMenu.add(repalyItem);
+        functionJMenu.add(reLoginItem);
         functionJMenu.add(closeItem);
-        functionJMenu.add(accountItem);
+//6.把公众号添加到关于我们当中
+        aboutJMenu.add(accountItem);
 
-        aboutusJMenu.add(accountItem);
+//5.把功能，关于我们添加到JMenuBar当中
+        jMenuBar.add(functionJMenu);
+        jMenuBar.add(aboutJMenu);
 
-        //将菜单里的两个选项加到菜单中
-        JMenuBar.add(functionJMenu);
-        JMenuBar.add(aboutusJMenu);
-
-        //给整个界面设置菜单
-        this.setJMenuBar(JMenuBar);
+//6.把整个菜单JMenuBar添加到整个界面当中
+        this.setJMenuBar(jMenuBar);
 
         //给条目绑定事件
         replaygame.addActionListener(this);
         reloginItem.addActionListener(this);
-        closeItem.addActionListener(this);
-        accountItem.addActionListener(this);
+
 
     }
 

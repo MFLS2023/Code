@@ -39,7 +39,7 @@ public class GameJFrameTEST extends JFrame implements KeyListener, ActionListene
     //记录0的坐标
     int x = 0, y = 0;
     //定义一个变量，记录当前展示图片的路径
-    String path = "..\\puzzlegame\\image\\girl\\girl2\\";
+    String path = "..\\puzzlegame\\image\\sport\\sport2\\";
     //创建正确的数组
     int[][] win = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 0}};
     //统计步数
@@ -75,7 +75,7 @@ public class GameJFrameTEST extends JFrame implements KeyListener, ActionListene
             tempArr[i] = temp;
         }
         //3.遍历数组
-//        for (int i = 0; i < tempArr.length; i++) {
+//        for (int i = 0; i < tempArr.length; i++) {a
 //            System.out.println(tempArr[i]+" ");
 //        }
 //        System.out.println();
@@ -199,9 +199,9 @@ public class GameJFrameTEST extends JFrame implements KeyListener, ActionListene
         closeItem.addActionListener(this);
         accountItem.addActionListener(this);
 
-        girlItem.addActionListener(this);
-        animalItem.addActionListener(this);
-        sportItem.addActionListener(this);
+        girlItem.addMouseListener(this);
+        animalItem.addMouseListener(this);
+        sportItem.addMouseListener(this);
 
 
     }
@@ -221,6 +221,7 @@ public class GameJFrameTEST extends JFrame implements KeyListener, ActionListene
         this.setLayout(null);
         //给整个界面添加键盘事件
         this.addKeyListener(this);
+
     }
 
     @Override
@@ -369,9 +370,7 @@ public class GameJFrameTEST extends JFrame implements KeyListener, ActionListene
             System.out.println("重新游戏");
             count = 0;
             iniData();
-
             initImage();
-
         } else if (obj == reloginItem) {
             System.out.println("重新登录");
             //返回登录界面，关闭当前游戏界面，打开登录界面
@@ -403,50 +402,66 @@ public class GameJFrameTEST extends JFrame implements KeyListener, ActionListene
         }
 
     }
-//D:\\study\\Code\\Java\\heima\\JavaSE\\puzzlegame\\image\\background.png  ..\puzzlegame\image\about.png  ..\puzzlegame\image\girl\girl2\
-    public void update(){
-        Random random = new Random();
 
+    //D:\\study\\Code\\Java\\heima\\JavaSE\\puzzlegame\\image\\background.png  ..\puzzlegame\image\about.png  ..\puzzlegame\image\girl\girl2\
+    public void update(int x) {
+        Random random = new Random();
+        if (x == 1) {
+            int number = random.nextInt(14);
+            System.out.println(number);
+        } else if (x == 2) {
+            int number = random.nextInt(9);
+            System.out.println(number);
+        } else if (x == 3) {
+            int number = random.nextInt(11);
+            System.out.println(number);
+        }
     }
+
     @Override
     public void mouseClicked(MouseEvent e) {
-            Object obj=e.getSource();
-            if(obj==girlItem){
-                System.out.println("随机切换美女图片");
-                count = 0;
-                iniData();
-                initImage();
-            }else if(obj==animalItem){
-                System.out.println("随机切换动物图片");
-                count = 0;
-                iniData();
-                initImage();
-            }else if(obj==sportItem){
-                System.out.println("随机切换运动图片");
-                count = 0;
-                iniData();
-                initImage();
-            }
+        System.out.println("单击");
+//        Object obj = e.getSource();
+//        System.out.println("danji");
+//        if (obj == girlItem) {
+//            System.out.println("随机切换美女图片");
+//            count = 0;
+//            update(1);
+//            iniData();
+//            initImage();
+//        } else if (obj == animalItem) {
+//            System.out.println("随机切换动物图片");
+//            count = 0;
+//            update(2);
+//            iniData();
+//            initImage();
+//        } else if (obj == sportItem) {
+//            System.out.println("随机切换运动图片");
+//            count = 0;
+//            update(3);
+//            iniData();
+//            initImage();
+//        }
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
-
+        System.out.println("press");
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-
+        System.out.println("release");
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-
+        System.out.println("enter");
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-
+        System.out.println("exit");
     }
 }
 
