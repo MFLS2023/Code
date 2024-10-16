@@ -2,13 +2,10 @@ package tech.gaoqilan.ui;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import java.awt.event.*;
 import java.util.Random;
 
-public class GameJFrame extends JFrame implements KeyListener, ActionListener {
+public class GameJFrameTEST extends JFrame implements KeyListener, ActionListener, MouseListener {
     //JFrame 界面，窗体
     //子类呢？也表示界面，窗体
     //以后跟游戏相关的所有逻辑都在这里了
@@ -19,7 +16,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
     //加载图片的时候,会根据二维数组中的数据及逆行加载
     int[][] data = new int[4][4];
 
-    public GameJFrame() {
+    public GameJFrameTEST() {
 
 
         //初始化界面
@@ -53,6 +50,11 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
     JMenuItem reloginItem = new JMenuItem("重新登录");
     JMenuItem closeItem = new JMenuItem("关闭游戏");
     JMenuItem accountItem = new JMenuItem("公众号");
+
+    //创建 更换图片 下的条目对象
+    JMenuItem girlItem = new JMenuItem("美女");
+    JMenuItem animalItem = new JMenuItem("动物");
+    JMenuItem sportItem = new JMenuItem("运动");
 
     //初始化数据
     private void iniData() {
@@ -166,7 +168,8 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
         JMenu functionJMenu = new JMenu("功能");
         JMenu aboutusJMenu = new JMenu("关于我们");
 
-        //
+        //添加一个更换图片的按钮
+        JMenu updateJMenu = new JMenu("更换图片");
 
 
         //将每一个条目加到选项中
@@ -175,11 +178,17 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
         functionJMenu.add(closeItem);
         functionJMenu.add(accountItem);
 
+
+        //将条目添加到 更换图片选项中
+        updateJMenu.add(girlItem);
+        updateJMenu.add(animalItem);
+        updateJMenu.add(sportItem);
         aboutusJMenu.add(accountItem);
 
         //将菜单里的两个选项加到菜单中
         JMenuBar.add(functionJMenu);
         JMenuBar.add(aboutusJMenu);
+        JMenuBar.add(updateJMenu);
 
         //给整个界面设置菜单
         this.setJMenuBar(JMenuBar);
@@ -189,6 +198,11 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
         reloginItem.addActionListener(this);
         closeItem.addActionListener(this);
         accountItem.addActionListener(this);
+
+        girlItem.addActionListener(this);
+        animalItem.addActionListener(this);
+        sportItem.addActionListener(this);
+
 
     }
 
@@ -220,7 +234,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
     public void keyPressed(KeyEvent e) {
         int code = e.getKeyCode();
         if (code == 65) {
-            //把界面中的所以图片全部删除
+            //把界面中的所有图片全部删除
             this.getContentPane().removeAll();
             //加载完整图片
             JLabel all = new JLabel(new ImageIcon(path + "\\all.jpg"));
@@ -228,7 +242,8 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             this.getContentPane().add(all);
             //加载背景图片
             JLabel background = new JLabel(new ImageIcon("D:\\study\\Code\\Java\\heima\\JavaSE\\puzzlegame\\image\\background.png"));
-            //把背景图片添加到界面中
+            //把背景图片移动添加到界面中
+            background.setBounds(40, 40, 508, 560);
             this.getContentPane().add(background);
             //刷新界面
             this.getContentPane().repaint();
@@ -244,6 +259,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             //结束方法
             return;
         }
+
 
         //对  上,下,左,右做判断
         //左37 上 38 右39 下40
@@ -385,6 +401,51 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
 
             jDialog.setVisible(true);
         }
+
+    }
+//D:\\study\\Code\\Java\\heima\\JavaSE\\puzzlegame\\image\\background.png  ..\puzzlegame\image\about.png  ..\puzzlegame\image\girl\girl2\
+    public void update(){
+        Random random = new Random();
+
+    }
+    @Override
+    public void mouseClicked(MouseEvent e) {
+            Object obj=e.getSource();
+            if(obj==girlItem){
+                System.out.println("随机切换美女图片");
+                count = 0;
+                iniData();
+                initImage();
+            }else if(obj==animalItem){
+                System.out.println("随机切换动物图片");
+                count = 0;
+                iniData();
+                initImage();
+            }else if(obj==sportItem){
+                System.out.println("随机切换运动图片");
+                count = 0;
+                iniData();
+                initImage();
+            }
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
 
     }
 }
