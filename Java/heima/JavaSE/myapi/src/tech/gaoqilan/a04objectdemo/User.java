@@ -60,15 +60,15 @@ public class User implements Cloneable{
         //return super.clone();
         // 先把被克隆对象中的数组获取出来
         int[] data = this.data;
-    // 创建新的数组
+        // 创建新的数组
         int[] newData = new int[data.length];
-    // 拷贝数组中的数据
+        // 拷贝数组中的数据
         for (int i = 0; i < data.length; i++) {
             newData[i] = data[i];
         }
-    // 调用父类中的方法克隆对象
+        // 调用父类中的方法克隆对象
         User u = (User) super.clone();
-    // 因为父类中的克隆方法是浅克隆，直接克隆出来的对象中的数组地址相同
+        // 因为父类中的克隆方法是浅克隆，直接克隆出来的对象中的数组地址相同
         u.data = newData;
         return u;
 

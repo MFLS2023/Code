@@ -20,6 +20,7 @@ public class ObjectDemo4 {
 
         //验证一件事情：Object中的克隆是浅克隆
         //想要进行深克隆，就需要重写clone方法并修改里面的方法体
+        //如果u2不随u1变，则深克隆，如果要看浅克隆，只要把User类里面的clone方法，只留最开始的return语句即可，后面的注释掉即可
         int[] arr = u1.getData();
         arr[0] = 100;
 
