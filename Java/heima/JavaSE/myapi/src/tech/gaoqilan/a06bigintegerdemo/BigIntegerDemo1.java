@@ -15,8 +15,8 @@ public class BigIntegerDemo1 {
         BigInteger bd2=new BigInteger("9999999999999999999999999999");
         System.out.println(bd2);
 
-        //3.获取指定进制的大整数
-        BigInteger bd4=new BigInteger("101",2);
+        //3.获取指定进制下的大整数（其实就是将该数字按照指定进制求出来）
+        BigInteger bd4=new BigInteger("1011",10);
         System.out.println(bd4);
 
         //4.静态方法获取BigInteger的对象，有优化
@@ -27,18 +27,18 @@ public class BigIntegerDemo1 {
 
         //如果long范围内的就使用 valueOf的方法，如果是不确定大小，使用 第二个方法
         /*
-BigInteger bd5 = BigInteger.valueOf(16);
-BigInteger bd6 = BigInteger.valueOf(16);
+            BigInteger bd5 = BigInteger.valueOf(16);
+            BigInteger bd6 = BigInteger.valueOf(16);
 
-System.out.println(bd5 == bd6); // true
+            System.out.println(bd5 == bd6); // true
 
-BigInteger bd7 = BigInteger.valueOf(17);
-BigInteger bd8 = BigInteger.valueOf(17);
+            BigInteger bd7 = BigInteger.valueOf(17);
+            BigInteger bd8 = BigInteger.valueOf(17);
 
-System.out.println(bd7 == bd8); // false
-*/
+            System.out.println(bd7 == bd8); // false
+        */
 
-// 5. 对象一旦创建内容的数据就不能发生改变
+// 5. 对象一旦创建，内容的数据就不能发生改变
         BigInteger bd9 = BigInteger.valueOf(1);
         BigInteger bd10 = BigInteger.valueOf(2);
         BigInteger result = bd9.add(bd10);
