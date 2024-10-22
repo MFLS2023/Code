@@ -16,7 +16,7 @@ public class RegexDemo8 {
           贪婪模式：abbbbbbbbbbbbbb
           非贪婪模式：ab
 
-          "Java" 当中，默认的是贪婪匹配
+          "Java" 当中，默认的是非贪婪匹配
           如果我们在数量词 +  的后面加上 ? 的话，那么此时就是非贪婪匹配。
         */
 
@@ -24,7 +24,7 @@ public class RegexDemo8 {
                 "经历了很多版本，当前企业中用的最多的是Java8和Java11，因为这两个是长期支持版本，" +
                 "下一个长期支持版本是Java17，相信在未来不久Java17也会逐渐登上历史舞台";
 
-        String regex = "ab+";
+        String regex = "ab+?";
 
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(s);

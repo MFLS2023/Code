@@ -12,7 +12,7 @@ public class RegexDemo5 {
     public static void main(String[] args) throws IOException {
 
         // 指定URL地址
-        URL url = new URL("https://m.sengzan.com/jiaoyu/29104.html?ivk_sa=10258831");
+        URL url = new URL("https://www.gaoqilan.tech/category/Code");
         URLConnection conn = url.openConnection();
 
         // 读取网页内容

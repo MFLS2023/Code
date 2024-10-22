@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7359e213-1f38-4699-8a8a-d71296b95873" name="更改" comment="10.10+10.11">
+      <change afterPath="$PROJECT_DIR$/AI/tech/bank_account.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AI/tech/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS61a" beforeDir="false" afterPath="$PROJECT_DIR$/../CS61a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/.idea/AnyDoorSettingsState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/.idea/AnyDoorSettingsState.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a06bigintegerdemo/BigIntegerDemo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a06bigintegerdemo/BigIntegerDemo1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a07bigdecimal/BIgDecimaDemo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a07bigdecimal/BIgDecimaDemo1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a08Regexdemo/RegexDemo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a08Regexdemo/RegexDemo3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a08Regexdemo/RegexDemo5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a08Regexdemo/RegexDemo5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a08Regexdemo/RegexDemo8.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a08Regexdemo/RegexDemo8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a08Regexdemo/RegexDemo9.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/out/production/myapi/tech/gaoqilan/a08Regexdemo/RegexDemo9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/src/tech/gaoqilan/a08Regexdemo/RegexDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/src/tech/gaoqilan/a08Regexdemo/RegexDemo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/src/tech/gaoqilan/a08Regexdemo/RegexDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/src/tech/gaoqilan/a08Regexdemo/RegexDemo5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/src/tech/gaoqilan/a08Regexdemo/RegexDemo8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/src/tech/gaoqilan/a08Regexdemo/RegexDemo8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/src/tech/gaoqilan/a08Regexdemo/RegexDemo9.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/heima/JavaSE/myapi/src/tech/gaoqilan/a08Regexdemo/RegexDemo9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +60,7 @@
   "keyToString": {
     "Python.Main_Bank_Version1.executor": "Run",
     "Python.OO_DimmerSwitch_Two_Instances.executor": "Run",
+    "Python.bank_account.executor": "Run",
     "Python.main.executor": "Run",
     "Python.shangji2.executor": "Run",
     "Python.shangji3.executor": "Run",
@@ -110,6 +124,7 @@
       <workItem from="1728349265738" duration="194000" />
       <workItem from="1728457895764" duration="1395000" />
       <workItem from="1728605154984" duration="566000" />
+      <workItem from="1729598240193" duration="2961000" />
     </task>
     <task id="LOCAL-00001" summary="anaconda3">
       <option name="closed" value="true" />
@@ -185,10 +200,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="10.10+10.11" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python$main.coverage" NAME="main 覆盖结果" MODIFIED="1726642343304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/homework_pyqt5/pythonProject" />
     <SUITE FILE_PATH="coverage/Python$shangji3.coverage" NAME="shangji3 覆盖结果" MODIFIED="1728605277405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI" />
+    <SUITE FILE_PATH="coverage/Python$main.coverage" NAME="main 覆盖结果" MODIFIED="1729601402874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/tech" />
     <SUITE FILE_PATH="coverage/Python$zhipai.coverage" NAME="zhipai 覆盖结果" MODIFIED="1724832436315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI" />
     <SUITE FILE_PATH="coverage/Python$shangji2.coverage" NAME="shangji2 覆盖结果" MODIFIED="1727269534140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI" />
+    <SUITE FILE_PATH="coverage/Python$bank_account.coverage" NAME="bank_account 覆盖结果" MODIFIED="1729601383275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/tech" />
     <SUITE FILE_PATH="coverage/Python$OO_DimmerSwitch_Two_Instances.coverage" NAME="OO_DimmerSwitch_Two_Instances 覆盖结果" MODIFIED="1727247974204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/Object-Oriented-Python-Code-master/Object-Oriented-Python-Code-master/Chapter_2" />
     <SUITE FILE_PATH="coverage/Python$Main_Bank_Version1.coverage" NAME="Main_Bank_Version1 覆盖结果" MODIFIED="1727249992504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/Object-Oriented-Python-Code-master/Object-Oriented-Python-Code-master/Chapter_4/BankOOP1_IndividualVariables" />
     <SUITE FILE_PATH="coverage/Python$test.coverage" NAME="test 覆盖结果" MODIFIED="1724849851526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

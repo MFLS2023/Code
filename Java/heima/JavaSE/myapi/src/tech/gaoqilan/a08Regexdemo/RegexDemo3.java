@@ -25,6 +25,7 @@ public class RegexDemo3 {
         System.out.println("01222442".matches(regex2));
         System.out.println("027-42424".matches(regex2));
         System.out.println("0712-3242434".matches(regex2));
+        System.out.println("0753-888888888".matches(regex2));
         System.out.println("--------------------");
 
         //邮箱号码
@@ -68,6 +69,7 @@ public class RegexDemo3 {
         System.out.println("154041198107053787".matches(regex8));
         System.out.println("130313197204039024".matches(regex8));
         System.out.println("430102197606046442".matches(regex8));
+        System.out.println("36999919991230123X".matches(regex8));
 
 
 
