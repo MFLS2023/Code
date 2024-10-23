@@ -19,6 +19,7 @@ YELLOW = (255, 255, 0)
 TEAL = (0, 255, 255)
 PURPLE = (255, 0, 255)
 
+
 # 3 - Initialize the world
 pygame.init()
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
@@ -35,7 +36,7 @@ while True:
     for event in pygame.event.get():
         # Clicked the close button? Quit pygame and end the program
         if event.type == pygame.QUIT:           
-            pygame.quit()  
+            pygame.quit()
             sys.exit()
 
     # 8 - Do any "per frame" actions
