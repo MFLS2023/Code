@@ -1,4 +1,4 @@
-package tech.gaoqilan.a11;
+package tech.gaoqilan.testdemo;
 
 import java.util.ArrayList;
 import java.util.Scanner;
