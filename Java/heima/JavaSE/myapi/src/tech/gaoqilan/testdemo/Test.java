@@ -10,6 +10,7 @@ public class Test {
     public static void main(String[] args) throws ParseException {
         /*
             用代码实现计算你活了多少天，用JDK7和JDk8两种方式
+            快一周没动了
          */
 
         //JDK7 只要对时间计算或者判断，得先获取当前时间的毫秒值
