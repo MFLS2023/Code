@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b0a5003-5afc-4e19-adf1-4da978c54140" name="更改" comment="Bank1_OneAccount.py">
-      <change afterPath="$PROJECT_DIR$/shangji4/Ball.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shangji4/Obstacle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shangji4/Player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shangji4/main.py" afterDir="false" />
+    <list default="true" id="9b0a5003-5afc-4e19-adf1-4da978c54140" name="更改" comment="20241111_ALL">
       <change beforePath="$PROJECT_DIR$/../../CS61a" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS61a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +112,7 @@
       <workItem from="1729952994851" duration="42000" />
       <workItem from="1730202693178" duration="126000" />
       <workItem from="1731054390891" duration="1043000" />
-      <workItem from="1731319449859" duration="1906000" />
+      <workItem from="1731319449859" duration="3216000" />
     </task>
     <task id="LOCAL-00001" summary="GPT">
       <option name="closed" value="true" />
@@ -136,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725433463376</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="20241111_ALL">
+      <option name="closed" value="true" />
+      <created>1731332972019</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731332972019</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,13 +147,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="GPT" />
     <MESSAGE value="Bank1_OneAccount.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bank1_OneAccount.py" />
+    <MESSAGE value="20241111_ALL" />
+    <option name="LAST_COMMIT_MESSAGE" value="20241111_ALL" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AI$shangji4.coverage" NAME="shangji4 覆盖结果" MODIFIED="1731054422772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AI$Bank1_OneAccount.coverage" NAME="Bank1_OneAccount 覆盖结果" MODIFIED="1725433680326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AI$.coverage" NAME=" 覆盖结果" MODIFIED="1729749936445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/AI$main.coverage" NAME="main 覆盖结果" MODIFIED="1731320697110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shangji4" />
+    <SUITE FILE_PATH="coverage/AI$main.coverage" NAME="main 覆盖结果" MODIFIED="1731323715288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shangji4" />
     <SUITE FILE_PATH="coverage/AI$Ball.coverage" NAME="Ball 覆盖结果" MODIFIED="1731320053429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shangji4" />
   </component>
 </project>
