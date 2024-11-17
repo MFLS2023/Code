@@ -38,5 +38,6 @@ public class ObjectDemo1 {
 
         System.out.println(Objects.nonNull(s3)); // true
         System.out.println(Objects.nonNull(s4)); // false
+        
     }
 }
