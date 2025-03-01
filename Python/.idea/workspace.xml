@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7359e213-1f38-4699-8a8a-d71296b95873" name="更改" comment="2024/10/23">
+      <change beforePath="$PROJECT_DIR$/../CS61a" beforeDir="false" afterPath="$PROJECT_DIR$/../CS61a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MFLS2023&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MFLS2023/Code.git&quot;,
+    &quot;accountId&quot;: &quot;20824bf3-01af-41c9-8856-14a26006e2fb&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2lHF0RTPIECbV1h50ta4d2ApoZ8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Main_Bank_Version1.executor": "Run",
+    "Python.Main_MVC.executor": "Run",
+    "Python.OO_DimmerSwitch_Two_Instances.executor": "Run",
+    "Python.PygameDemo5_DrawingShapes.executor": "Debug",
+    "Python.PygameMoveByKeyboardContinuous.executor": "Run",
+    "Python.PygameOneImage.executor": "Run",
+    "Python.bank_account.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.shangji2.executor": "Run",
+    "Python.shangji3.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.zhipai.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/File/study/郑航/AI/2307080235张城",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\Code\Python" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.347" />
+        <option value="bundled-python-sdk-c2d6afa66fbe-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.347" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="7359e213-1f38-4699-8a8a-d71296b95873" name="更改" comment="" />
+      <created>1724828871279</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724828871279</updated>
+      <workItem from="1724828872304" duration="1351000" />
+      <workItem from="1724830259774" duration="2342000" />
+      <workItem from="1724845497359" duration="3668000" />
+      <workItem from="1725451503915" duration="77000" />
+      <workItem from="1725451588026" duration="38000" />
+      <workItem from="1725451793960" duration="224000" />
+      <workItem from="1725452200946" duration="147000" />
+      <workItem from="1725453632220" duration="13000" />
+      <workItem from="1725456225497" duration="149000" />
+      <workItem from="1725456381568" duration="91000" />
+      <workItem from="1725456483327" duration="122000" />
+      <workItem from="1725456682735" duration="687000" />
+      <workItem from="1725711843222" duration="32000" />
+      <workItem from="1726105659341" duration="77000" />
+      <workItem from="1726408782016" duration="356000" />
+      <workItem from="1726642277504" duration="772000" />
+      <workItem from="1727246685780" duration="4251000" />
+      <workItem from="1727268986596" duration="1016000" />
+      <workItem from="1727360115195" duration="105000" />
+      <workItem from="1727445970985" duration="57000" />
+      <workItem from="1727532528468" duration="104000" />
+      <workItem from="1728348520015" duration="71000" />
+      <workItem from="1728349265738" duration="194000" />
+      <workItem from="1728457895764" duration="1395000" />
+      <workItem from="1728605154984" duration="566000" />
+      <workItem from="1729598240193" duration="3622000" />
+      <workItem from="1729664641315" duration="2256000" />
+      <workItem from="1729666922714" duration="2184000" />
+      <workItem from="1729669528851" duration="1479000" />
+      <workItem from="1729687299241" duration="35000" />
+      <workItem from="1729727338678" duration="798000" />
+      <workItem from="1729731094339" duration="1573000" />
+    </task>
+    <task id="LOCAL-00001" summary="anaconda3">
+      <option name="closed" value="true" />
+      <created>1725456244791</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725456244791</updated>
+    </task>
+    <task id="LOCAL-00002" summary="9.25">
+      <option name="closed" value="true" />
+      <created>1727252266147</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727252266147</updated>
+    </task>
+    <task id="LOCAL-00003" summary="9.26">
+      <option name="closed" value="true" />
+      <created>1727360149014</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727360149014</updated>
+    </task>
+    <task id="LOCAL-00004" summary="9.26">
+      <option name="closed" value="true" />
+      <created>1727446012699</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727446012699</updated>
+    </task>
+    <task id="LOCAL-00005" summary="9.28">
+      <option name="closed" value="true" />
+      <created>1727532571309</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727532571309</updated>
+    </task>
+    <task id="LOCAL-00006" summary="10.10+10.11">
+      <option name="closed" value="true" />
+      <created>1728605391244</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728605391244</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2024/10/22">
+      <option name="closed" value="true" />
+      <created>1729602277290</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729602277290</updated>
+    </task>
+    <task id="LOCAL-00008" summary="2024/10/23">
+      <option name="closed" value="true" />
+      <created>1729687325094</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729687325094</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="anaconda3" />
+    <MESSAGE value="9.25" />
+    <MESSAGE value="9.26" />
+    <MESSAGE value="9.28" />
+    <MESSAGE value="10.10+10.11" />
+    <MESSAGE value="2024/10/22" />
+    <MESSAGE value="2024/10/23" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024/10/23" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Python$PygameDemo5_DrawingShapes.coverage" NAME="PygameDemo5_DrawingShapes 覆盖结果" MODIFIED="1729670002792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/Object-Oriented-Python-Code-master/Object-Oriented-Python-Code-master/Chapter_5" />
+    <SUITE FILE_PATH="coverage/Python$zhipai.coverage" NAME="zhipai 覆盖结果" MODIFIED="1724832436315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI" />
+    <SUITE FILE_PATH="coverage/Python$shangji2.coverage" NAME="shangji2 覆盖结果" MODIFIED="1727269534140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI" />
+    <SUITE FILE_PATH="coverage/Python$bank_account.coverage" NAME="bank_account 覆盖结果" MODIFIED="1729601692757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/tech" />
+    <SUITE FILE_PATH="coverage/Python$Main_Bank_Version1.coverage" NAME="Main_Bank_Version1 覆盖结果" MODIFIED="1727249992504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/Object-Oriented-Python-Code-master/Object-Oriented-Python-Code-master/Chapter_4/BankOOP1_IndividualVariables" />
+    <SUITE FILE_PATH="coverage/Python$test.coverage" NAME="test 覆盖结果" MODIFIED="1724849851526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$PygameMoveByKeyboardContinuous.coverage" NAME="PygameMoveByKeyboardContinuous 覆盖结果" MODIFIED="1729670541919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/Object-Oriented-Python-Code-master/Object-Oriented-Python-Code-master/Chapter_5/PygameDemo3_MoveByKeyboard" />
+    <SUITE FILE_PATH="coverage/Python$PygameOneImage.coverage" NAME="PygameOneImage 覆盖结果" MODIFIED="1729670037234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/Object-Oriented-Python-Code-master/Object-Oriented-Python-Code-master/Chapter_5/PygameDemo1_OneImage" />
+    <SUITE FILE_PATH="coverage/Python$shangji3.coverage" NAME="shangji3 覆盖结果" MODIFIED="1728605277405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI" />
+    <SUITE FILE_PATH="coverage/Python$main.coverage" NAME="main 覆盖结果" MODIFIED="1729601674597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/tech" />
+    <SUITE FILE_PATH="coverage/Python$OO_DimmerSwitch_Two_Instances.coverage" NAME="OO_DimmerSwitch_Two_Instances 覆盖结果" MODIFIED="1727247974204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/Object-Oriented-Python-Code-master/Object-Oriented-Python-Code-master/Chapter_2" />
+    <SUITE FILE_PATH="coverage/Python$Main_MVC.coverage" NAME="Main_MVC 覆盖结果" MODIFIED="1729669979633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/Object-Oriented-Python-Code-master/Object-Oriented-Python-Code-master/Chapter_17/MVC_RollTheDice" />
+  </component>
+</project>

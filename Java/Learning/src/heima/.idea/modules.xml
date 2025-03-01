@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/heima.iml" filepath="$PROJECT_DIR$/.idea/heima.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSE/jigsawgame/jigsawgame.iml" filepath="$PROJECT_DIR$/JavaSE/jigsawgame/jigsawgame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSE/puzzlegame/puzzlegame.iml" filepath="$PROJECT_DIR$/JavaSE/puzzlegame/puzzlegame.iml" />
+    </modules>
+  </component>
+</project>

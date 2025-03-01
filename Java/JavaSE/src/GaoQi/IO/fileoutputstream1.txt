@@ -1,0 +1,4 @@
+U ->  bu shi ge men
+-> bbbbbb\n
+ \r-> zhi  -> first:test\r-> second:test
+\r\n
