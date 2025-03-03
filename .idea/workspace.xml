@@ -23,12 +23,12 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="6ca404a8-ae9f-4a10-8f63-70f13e070356" />
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/MFLS2023/CS61a.git&quot;,
-    &quot;accountId&quot;: &quot;6ca404a8-ae9f-4a10-8f63-70f13e070356&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/krahets/hello-algo.git",
+    "accountId": "6ca404a8-ae9f-4a10-8f63-70f13e070356"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -116,6 +116,7 @@
       <workItem from="1726057871306" duration="79000" />
       <workItem from="1740789822155" duration="416000" />
       <workItem from="1740790246887" duration="136000" />
+      <workItem from="1740796005978" duration="425000" />
     </task>
     <task id="LOCAL-00001" summary="last">
       <option name="closed" value="true" />
